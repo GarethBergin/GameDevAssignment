@@ -8,9 +8,10 @@ private:
 public:
 	void getPoints();
 	
-
 	void addPoints(int add);
 
 	void removePoints(int remove);
+
+	void finalPoints();
 };
 
