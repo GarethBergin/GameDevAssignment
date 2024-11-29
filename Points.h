@@ -1,17 +1,21 @@
 #pragma once
 #include <iostream>
-class Points
-{
+
+class Points {
 private:
-	int points;
+    int points; // Stores the player's points
 
 public:
-	void getPoints();
-	
-	void addPoints(int add);
+    Points(); // Constructor
 
-	void removePoints(int remove);
+    // Core functionality for point management
+    void getPoints() const;
+    void addPoints(int add);
+    void removePoints(int remove);
 
-	void finalPoints();
+    // Display final points (the method used in GameManager)
+    void finalPoints() const;
+
+    // Return the current points value (if needed elsewhere)
+    int getPointsValue() const;
 };
-
